@@ -9,7 +9,7 @@ def f(file: str, coordinate: Tuple[int, int]):
         return list(reader)[coordinate[0]][coordinate[0] - 1]
 
 
-if __name__ == '__main__':
+def main():
     p = argparse.ArgumentParser()
     p.add_argument('-p', type=str)
     p.add_argument('-r', type=int)
@@ -19,5 +19,5 @@ if __name__ == '__main__':
 
     print(f(args.p, (args.r, args.c)))
     
-    
-# python3 task.py -p=./../data/test.csv -r=1 -c=0
+if __name__ == '__main__':
+    main()
